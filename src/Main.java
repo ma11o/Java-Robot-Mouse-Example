@@ -15,5 +15,11 @@ public class Main {
 
         // マウスを画面の中央に移動させる
         robot.mouseMove(screenWidth / 2, screenHeight / 2);
+
+        // 次の動作の前に0.5秒待つ
+        robot.delay(500);
+        robot.mouseMove(screenWidth / 2 + 100, screenHeight / 2);
+        robot.delay(500);
+        robot.mouseMove(screenWidth / 2 + 200, screenHeight / 2);
     }
 }
